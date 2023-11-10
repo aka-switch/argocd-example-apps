@@ -4,11 +4,9 @@ metadata:
   name: nginx
 spec:
   containers:
-  - name: nginx1
+  - name: nginx
     image: nginx:latest
     ports:
-    - containerPort: 81
-  - name: nginx2
-    image: nginx:latest
-    ports:
-    - containerPort: 82
+    - containerPort: 80
+  - name: busybox
+    image: busybox:latest
