@@ -8,7 +8,7 @@ spec:
     emptyDir: {}
   containers:
   - name: 1st
-    image: nginx
+    image: nginx:latest
     volumeMounts:
     - name: html
       mountPath: /usr/share/nginx/html
